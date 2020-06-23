@@ -13,7 +13,7 @@
 
 
 	<!-- Page header section start -->
-	<section class="page-header-section set-bg" data-setbg="{{ asset('assets')}}/img/header-bg.jpg">
+	<section class="page-header-section set-bg" data-setbg="{{url('img/header-bg.jpg')}}">
 		<div class="container">
 			<h1 class="header-title">Portfolio<span>.</span></h1>
 		</div>
@@ -39,17 +39,17 @@
 			<div id="portfolio">
 				<div class="grid-sizer"></div>
 				<!-- portfolio item -->
-				<div class="grid-item set-bg grid-wide photo" data-setbg="{{ asset('assets')}}/img/portfolio/1.jpg"><a class="img-popup" href="{{ asset('assets')}}/img/portfolio/1.jpg"></a></div>
+				<div class="grid-item set-bg grid-wide photo" data-setbg="{{url('img/portfolio/1.jpg')}}"><a class="img-popup" href="{{url('img/portfolio/1.jpg')}}"></a></div>
 				<!-- portfolio item -->
-				<div class="grid-item set-bg design corp" data-setbg="{{ asset('assets')}}/img/portfolio/2.jpg"><a class="img-popup" href="{{ asset('assets')}}/img/portfolio/2.jpg"></a></div>
+				<div class="grid-item set-bg design corp" data-setbg="{{url('img/portfolio/2.jpg')}}"><a class="img-popup" href="{{url('img/portfolio/2.jpg')}}"></a></div>
 				<!-- portfolio item -->
-				<div class="grid-item set-bg iden photo uxui" data-setbg="{{ asset('assets')}}/img/portfolio/3.jpg"><a class="img-popup" href="{{ asset('assets')}}/img/portfolio/3.jpg"></a></div>
+				<div class="grid-item set-bg iden photo uxui" data-setbg="{{url('img/portfolio/3.jpg')}}"><a class="img-popup" href="{{url('img/portfolio/3.jpg')}}"></a></div>
 				<!-- portfolio item -->
-				<div class="grid-item set-bg corp design" data-setbg="{{ asset('assets')}}/img/portfolio/4.jpg"><a class="img-popup" href="{{ asset('assets')}}/img/portfolio/4.jpg"></a></div>
+				<div class="grid-item set-bg corp design" data-setbg="{{url('img/portfolio/4.jpg')}}"><a class="img-popup" href="{{url('img/portfolio/4.jpg')}}"></a></div>
 				<!-- portfolio item -->
-				<div class="grid-item set-bg uxui iden" data-setbg="{{ asset('assets')}}/img/portfolio/5.jpg"><a class="img-popup" href="{{ asset('assets')}}/img/portfolio/5.jpg"></a></div>
+				<div class="grid-item set-bg uxui iden" data-setbg="{{url('img/portfolio/5.jpg')}}"><a class="img-popup" href="{{url('img/portfolio/5.jpg')}}"></a></div>
 				<!-- portfolio item -->
-				<div class="grid-item set-bg grid-long design corp" data-setbg="{{ asset('assets')}}/img/portfolio/6.jpg"><a class="img-popup" href="{{ asset('assets')}}/img/portfolio/6.jpg"></a></div>
+				<div class="grid-item set-bg grid-long design corp" data-setbg="{{url('img/portfolio/6.jpg')}}"><a class="img-popup" href="{{url('img/portfolio/6.jpg')}}"></a></div>
 			</div>
 		</div>
 		<div class="container">
