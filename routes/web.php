@@ -23,3 +23,11 @@ Route::get('template/about','NavController@nav1');
 Route::get('template/service','NavController@nav2');
 Route::get('template/portfolio','NavController@nav3');
 Route::get('template/contact','NavController@nav4');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
