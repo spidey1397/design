@@ -62,6 +62,19 @@
 	</div>
 	<!-- Page section end -->
 
+	<!-- Page section start -->
+	<div class="page-section spad">
+		<div class="container">
+			<!-- portfolio filter menu -->
+			<ul class="portfolio-filter">
+			@foreach ($categories as $category)
+				<li class="filter" data-filter="*">{{ $category->name }}</li>
+				
+			</ul>
+		</div>
+	</div>
+	<!-- Page section end -->
+
 
 
 	@include('template.home.content.footer')

@@ -1,5 +1,7 @@
 <?php
-
+use App\Project;
+use App\Category;
+use App\Image;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,3 +33,22 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('read', function () {
+    $categories = Project::find(1)->categories()->get();
+    foreach ($categories as $category ) {
+        echo $category->name;
+    }
+});
+
+Route::get('data', function () {
+    $projects = Category::find(2)->projects()->get();
+    foreach ($projects as $project ) {
+        echo $project->name;
+    }
+});
+
+Route::resource('pic', 'JoinsController');
+
+
+
