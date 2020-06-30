@@ -65,12 +65,24 @@
 	<!-- Page section start -->
 	<div class="page-section spad">
 		<div class="container">
+		@foreach ($projects as $project)
+		<div>
+		<h1>{{ $project->name }}</h1>
 			<!-- portfolio filter menu -->
 			<ul class="portfolio-filter">
-			@foreach ($categories as $category)
+			
+			@foreach ($project->categories as $category)
 				<li class="filter" data-filter="*">{{ $category->name }}</li>
+				@endforeach
 				
 			</ul>
+			@foreach ($project->images as $image)
+			<div>
+			<p>{{ $image->name }}</p>
+			</div>
+			@endforeach
+			</div>
+			@endforeach
 		</div>
 	</div>
 	<!-- Page section end -->

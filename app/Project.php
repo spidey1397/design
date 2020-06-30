@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
     protected $fillable = ['name'];
-    public function categories()
+    public function images()
     {
-        return $this->belongsToMany('App\Category');
+        return $this->morphMany('App\Image' , 'imageable');
     }
 
    

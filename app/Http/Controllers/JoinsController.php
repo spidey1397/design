@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Category;
+use App\Project;
 use Illuminate\Http\Request;
 
 class JoinsController extends Controller
@@ -13,8 +13,19 @@ class JoinsController extends Controller
      */
     public function index()
     {
-        $categories = Category::all();
-        return view('pic.index',compact($categories));
+        $projects = Project::all();
+    
+     foreach ($projects as $project ) {
+    //    echo $project->categories()->get().'<br>';
+    echo $project->name . '<br>';
+    $categories = $project->images()->get();
+     foreach ($categories as $category ) {
+         echo $category->name .'<br>';
+     }
+     }
+        
+        // return view('template.home.linked.portfolio',compact('projects'));
+        
     }
 
     /**

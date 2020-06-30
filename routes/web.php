@@ -35,16 +35,17 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('read', function () {
-    $categories = Project::find(1)->categories()->get();
-    foreach ($categories as $category ) {
-        echo $category->name;
-    }
+    $projects = Project::all();
+    
+     foreach ($projects as $project ) {
+        echo $project->categories()->get();
+     }
 });
 
 Route::get('data', function () {
     $projects = Category::find(2)->projects()->get();
     foreach ($projects as $project ) {
-        echo $project->name;
+        echo $project;
     }
 });
 
